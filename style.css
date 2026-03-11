@@ -1,4 +1,4 @@
-/* 2. CSS RULES Y MODELO DE CAJA */
+
 :root {
     --primary: #2ecc71;
     --dark: #1a1a1a;
@@ -9,7 +9,7 @@
 * {
     margin: 0;
     padding: 0;
-    box-sizing: border-box; /* Requerido  */
+    box-sizing: border-box; 
 }
 
 body {
@@ -18,7 +18,7 @@ body {
     color: #333;
 }
 
-/* 6. GRID LAYOUT (Estructura macro) [cite: 37] */
+
 .layout-grid {
     display: grid;
     grid-template-areas: 
@@ -29,7 +29,7 @@ body {
     min-height: 100vh;
 }
 
-/* HEADER */
+
 .header {
     grid-area: header;
     background-color: var(--dark);
@@ -44,7 +44,7 @@ body {
 .header__logo { font-size: 1.5rem; font-weight: bold; }
 .header__logo span { color: var(--primary); }
 
-/* 5. FLEXBOX (Menú) [cite: 33, 36] */
+
 .nav__list {
     display: flex;
     list-style: none;
@@ -59,9 +59,9 @@ body {
     transition: 0.3s;
 }
 
-.nav__link:hover { color: var(--primary); } /* Requerido [cite: 16] */
+.nav__link:hover { color: var(--primary); } 
 
-/* MAIN CONTENT */
+
 .main-content { grid-area: main; padding: 40px 5%; }
 
 .section-hero__title {
@@ -70,7 +70,7 @@ body {
     color: var(--dark);
 }
 
-/* 5. FLEXBOX (Sección en columnas) [cite: 34, 36] */
+
 .leagues-container {
     display: flex;
     gap: 20px;
@@ -87,13 +87,13 @@ body {
     border-bottom: 5px solid #ddd;
 }
 
-/* BEM MODIFICADOR [cite: 26] */
+
 .league-card--featured {
     border-bottom: 5px solid var(--primary);
     transform: scale(1.05);
 }
 
-/* ASIDE Y SIDEBAR */
+
 .sidebar {
     grid-area: aside;
     background: #eeeeee;
@@ -104,11 +104,11 @@ body {
     background: var(--white);
     padding: 20px;
     border-radius: 10px;
-    position: relative; /* Requerido [cite: 29] */
+    position: relative; 
 }
 
 .sidebar__badge {
-    position: absolute; /* Requerido [cite: 29] */
+    position: absolute; 
     top: -10px;
     right: 10px;
     background: #e74c3c;
@@ -119,7 +119,7 @@ body {
     font-weight: bold;
 }
 
-/* FOOTER */
+
 .footer {
     grid-area: footer;
     background: var(--dark);
@@ -128,7 +128,7 @@ body {
     padding: 2rem;
 }
 
-/* 4. POSITION FIXED [cite: 28] */
+
 .scroll-top {
     position: fixed;
     bottom: 30px;
